@@ -1077,12 +1077,12 @@ color:#c26700;
         top: 110rem;
     }
 
-        .profile-img img {
-            width: 300px;          /* Adjust the size as needed */
-            height: 300px;
-            border-radius: 50%;    /* Makes the image circular */
+        .profile-img img {  
+            height: auto; 
+            border: radius 50%  /* Makes the image circular */
             object-fit: cover;     /* Ensures the image fills the circle */
-            position: relative;    /* For animation */
+            position: relative;  
+            opacity:10% ;  /* For animation */
         }
         
         .moving-image {
