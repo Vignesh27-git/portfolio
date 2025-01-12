@@ -47,7 +47,8 @@ p{
     font-family: 'Gotham Medium';
     line-height: .6cm;
     font-size: 1.8rem;
-    font-weight: 200;
+    font-weight: 200;	
+	color:white;
 }
 
 img{
