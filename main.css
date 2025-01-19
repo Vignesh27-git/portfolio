@@ -24,6 +24,7 @@ body{
     height: 100vh;
     background-image: url(https://media.istockphoto.com/id/1186475376/vector/abstract-blurred-background-defocused-purple-gradient.jpg?s=612x612&w=0&k=20&c=PzPOvt9C1xmMKGuoaYpBnshYbKdTvPrJb_Tkt4jE2Oo=);
     background-size: cover;
+    
 }
 
 section{
@@ -63,6 +64,7 @@ img{
     height: 100%;
     margin: 0 auto;
     position: relative;
+    gap: 20px; /* Adds gap between the picture and text */
 }
 
 .section-heading{
@@ -159,8 +161,8 @@ li{
 
 .nav-link:hover,
 .nav-link:focus{
-    background: linear-gradient(#f0c800ce,#ff5a3dcb);
-    -webkit-background-clip: text;
+    background: linear-gradient(#4f4829ce,#ff5a3dcb);
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
 }
 
@@ -356,7 +358,7 @@ li{
     white-space: nowrap;
     border-right: 3px solid black; /* Cursor effect */
     width: 0; /* Start with no width */
-    animation: typing 3s steps(80) 1s infinite, blink 0.75s step-end infinite,  blinkCaret 0.75s step-end 0.1s;
+    animation: typing 5s steps(180) 1s infinite, blink 0.75s step-end infinite,  blinkCaret 0.75s step-end 0.1s;
   }
   
   .skills {
@@ -411,12 +413,21 @@ li{
 }
 
 .profile-img{
-    flex: .8;
-    width: 400px;
+    width: 400px; /* Default size */
     height: 400px;
-    border-radius: 50%;
+    overflow: hidden;
+    border-radius: 50%; /* Circular shape */
+   
     
 }
+/* Image styling */
+.profile-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: float 5s infinite ease-in-out; /* Optional floating effect */
+}
+
 
 .about-details{
     flex: 1;
@@ -1079,7 +1090,7 @@ color:#c26700;
 
         .profile-img img {  
             height: auto; 
-            border: radius 50%  /* Makes the image circular */
+            border: radius 50%;  /* Makes the image circular */
             object-fit: cover;     /* Ensures the image fills the circle */
             position: relative;  
             opacity:10% ;  /* For animation */
@@ -1287,6 +1298,58 @@ color:#c26700;
       } 
     
 
+}
+/* footer */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #222121;
+  border-radius: 8px;
+  background-color: #131313;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: orange;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-group {
+  margin-bottom: 15px;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
 }
 
 
