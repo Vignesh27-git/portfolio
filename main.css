@@ -1300,57 +1300,68 @@ color:#c26700;
 
 }
 /* footer */
-.contact-form {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #222121;
-  border-radius: 8px;
-  background-color: #131313;
+.Contact-us{
+    display: flex;
+    justify-content: center;
 }
 
-.contact-form h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: orange;
+#form {
+    background-color:#131313;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
 }
-
-.contact-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
-
-.contact-form input, .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
-
-.checkbox-group {
-  margin-bottom: 15px;
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
-
-.checkbox-group label {
-  font-weight: normal;
+textarea {
+    resize: vertical;
+    height: 120px;
 }
-
-.contact-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
-
-.contact-form button:hover {
-  background-color: #0056b3;
+button:hover {
+    background-color: #45a049;
 }
-
+#result {
+    text-align: center;
+    margin-top: 20px;
+}
+.success {
+    color: green;
+}
+.error {
+    color: red;
+}
+/* Responsive */
+@media screen and (max-width: 600px) {
+    #form {
+        width: 90%;
+    }
+}
 
 /*End media queries*/
