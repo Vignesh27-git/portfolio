@@ -1025,13 +1025,11 @@ color:#c26700;
 
 }
 .btn{
-    ackground-color: aqua;
-    border-radius: 5px;
-    border: solid lightgreen;
-    padding: 5px;
-    font-size: 17px;
+    background-color: aqua;
+    border-radius: 8px;
+    font-size: 20px;
     color: black;
-    width: 250px;
+    width: 230px;
 }
 
 @media screen and (max-width: 600px){
