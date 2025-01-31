@@ -568,51 +568,79 @@ color:#c26700;
 }
 /*End services*/
 
-/*Start portfolio*/
-.portfolio-item{
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5rem;
-}
-.portfolio-item:last-child{
-    margin-bottom: 0;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.portfolio-img{
-    flex: .9;
+.portfolio-item {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.portfolio-description{
-    flex: 1;
-    font-size: 4rem;
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.portfolio-description h1{
-    font-size: 3rem;
-    margin: 1rem 0;
-    font-weight: 400;
-}
-.portfolio-description h6{
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 350;
-    opacity: .6;
-    margin-bottom: 0rem;
-    
+.portfolio-item a {
+    display: block;
+    text-decoration: none;
 }
 
-.portfolio-description .cta{
-    display: inline-block;
-    margin-top: 2.5rem;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: #2e89ff;
+.portfolio-img {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
-.portfolio-description .cta:hover{
-    color: #0059ff;
+.portfolio-img:hover {
+    transform: scale(1.03);
 }
+
+.portfolio-img video,
+.portfolio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-img video:hover,
+.portfolio-img img:hover {
+    transform: scale(1.05);
+}
+/*End portfolio*/
+
+/* Optional: Ensure the experience image fits well */
+.experience-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hover effect for images and videos */
+.portfolio-img img, .portfolio-img video {
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-img:hover img, .portfolio-img:hover video {
+    transform: scale(1.05); /* Zoom effect */
+}
+
+
+
+
 
 
 /*End services*/
@@ -1361,6 +1389,28 @@ button:hover {
 @media screen and (max-width: 600px) {
     #form {
         width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        flex: 1 1 100%; /* Stack items on smaller screens */
+    }
+}
+/* pojects  */
+/* Tablets (768px and above) */
+@media screen and (max-width: 1024px) {
+    .portfolio-item {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* Mobile devices (below 768px) */
+@media screen and (max-width: 768px) {
+    .portfolio-item {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 }
 
