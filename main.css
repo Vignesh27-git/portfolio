@@ -493,6 +493,7 @@ li{
     grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
     grid-gap: 3rem;
     text-align: left;
+    margin-left: 2rem;
 }
 .skill{
     display: flex;
@@ -1415,3 +1416,4 @@ button:hover {
 }
 
 /*End media queries*/
+
