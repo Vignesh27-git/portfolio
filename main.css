@@ -493,7 +493,7 @@ li{
     grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
     grid-gap: 3rem;
     text-align: left;
-    margin-left: 2rem;
+    margin: 2rem;
 }
 .skill{
     display: flex;
@@ -940,6 +940,7 @@ color:#c26700;
         grid-template-columns: repeat(auto-fit, minmax(13rem,1fr));
         grid-gap: 1rem;
         text-align: left;
+	    
     }
     .skill{
         display: flex;
@@ -1416,4 +1417,5 @@ button:hover {
 }
 
 /*End media queries*/
+
 
