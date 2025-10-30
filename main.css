@@ -413,8 +413,8 @@ li{
 }
 
 .profile-img{
-    width: 400px; /* Default size */
-    height: 400px;
+    width: 245px; /* Default size */
+    height: 434px;
     overflow: hidden;
     border-radius: 50%; /* Circular shape */
    
@@ -423,7 +423,7 @@ li{
 /* Image styling */
 .profile-img img {
     width: 100%;
-    height: auto;
+    height: 51vh;
     object-fit: cover;
     animation: float 5s infinite ease-in-out; /* Optional floating effect */
 }
@@ -1417,5 +1417,6 @@ button:hover {
 }
 
 /*End media queries*/
+
 
 
