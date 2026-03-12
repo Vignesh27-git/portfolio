@@ -28,4 +28,22 @@ $(document).ready(function () {
 });
 
 
+function filterProjects(category) {
+
+  const projects = document.querySelectorAll(".portfolio-item");
+
+  projects.forEach(project => {
+
+    if (category === "all" || project.dataset.category === category) {
+      project.style.display = "";
+    } else {
+      project.style.display = "none";
+    }
+
+  });
+
+}
+
+
+
 
