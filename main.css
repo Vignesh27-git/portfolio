@@ -581,6 +581,38 @@ color:#c26700;
     gap: 20px;
 }
 
+.project-buttons{
+   display: flex;
+    text-align: center;
+    padding: 3rem 44rem;
+    gap: 7rem;
+    margin-bottom: 3rem;
+    color: white;
+    font-size: 30px;
+}
+
+.project-buttons button{
+    padding: 8px 128px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    background: #2c2c2c;
+    color: #fff;
+    /* font-size: 14px; */
+    /* cursor: pointer; */
+    transition: 0.3s ease;
+}
+
+.project-buttons button:hover{
+    background:#c26700;
+}
+
+.project-buttons button.active{
+    background: #6c63ff;
+}
+
+
+
 .portfolio-item {
     flex: 1 1 calc(33.33% - 20px);
     max-width: calc(33.33% - 20px);
@@ -1417,6 +1449,7 @@ button:hover {
 }
 
 /*End media queries*/
+
 
 
 
