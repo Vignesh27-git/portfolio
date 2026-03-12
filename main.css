@@ -584,7 +584,7 @@ color:#c26700;
 .project-buttons{
    display: flex;
     text-align: center;
-    padding: 3rem 44rem;
+    padding: 3rem 27rem;
     gap: 7rem;
     margin-bottom: 3rem;
     color: white;
@@ -1449,6 +1449,7 @@ button:hover {
 }
 
 /*End media queries*/
+
 
 
 
