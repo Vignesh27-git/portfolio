@@ -22,7 +22,8 @@ html{
 body{
     width: 100%;
     height: 100vh;
-    background-image: url(https://media.istockphoto.com/id/1186475376/vector/abstract-blurred-background-defocused-purple-gradient.jpg?s=612x612&w=0&k=20&c=PzPOvt9C1xmMKGuoaYpBnshYbKdTvPrJb_Tkt4jE2Oo=);
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20250701/pngtree-futuristic-blue-and-red-glowing-energy-waves-abstract-background-image_17584879.jpg);
+    /* url(https://media.istockphoto.com/id/1186475376/vector/abstract-blurred-background-defocused-purple-gradient.jpg?s=612x612&w=0&k=20&c=PzPOvt9C1xmMKGuoaYpBnshYbKdTvPrJb_Tkt4jE2Oo=); */
     background-size: cover;
     
 }
@@ -571,6 +572,8 @@ color:#c26700;
 
 
 /* Portfolio Section */
+
+
 .portfolio {
     padding: 50px 0;
 }
@@ -584,7 +587,7 @@ color:#c26700;
 .project-buttons{
    display: flex;
     text-align: center;
-    padding: 3rem 27rem;
+    padding: 3rem 16rem;
     gap: 7rem;
     margin-bottom: 3rem;
     color: white;
@@ -592,11 +595,11 @@ color:#c26700;
 }
 
 .project-buttons button{
-    padding: 8px 128px;
-    margin: 5px;
+    padding: 10px 128px;
+    margin: 5px 10px;
     border: none;
     border-radius: 20px;
-    background: #2c2c2c;
+     background-color: #0c3564;
     color: #fff;
     /* font-size: 14px; */
     /* cursor: pointer; */
@@ -604,13 +607,12 @@ color:#c26700;
 }
 
 .project-buttons button:hover{
-    background:#c26700;
+    background:#037fff
 }
 
 .project-buttons button.active{
     background: #6c63ff;
 }
-
 
 
 .portfolio-item {
@@ -1449,8 +1451,6 @@ button:hover {
 }
 
 /*End media queries*/
-
-
 
 
 
