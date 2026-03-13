@@ -35,7 +35,7 @@ function filterProjects(category) {
   projects.forEach(project => {
 
     if (category === "all" || project.dataset.category === category) {
-      project.style.display = "";
+      project.style.display = "block";
     } else {
       project.style.display = "none";
     }
@@ -43,6 +43,7 @@ function filterProjects(category) {
   });
 
 }
+
 
 
 
