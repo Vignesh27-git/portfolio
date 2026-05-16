@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";``
+import { Col, Row } from "react-bootstrap";
 
 import Javascript from "../../Assets/TechIcons/Javascript.svg";
 import ReactIcon from "../../Assets/TechIcons/React.svg";
@@ -11,50 +11,25 @@ import MUI from "../../Assets/TechIcons/MUI.svg";
 import Postman from "../../Assets/TechIcons/Postman.svg";
 
 function Techstack() {
+  const techItems = [
+    { img: Javascript, name: "JavaScript" },
+    { img: ReactIcon, name: "React.js" },
+    { img: Redux, name: "Redux" },
+    { img: Git, name: "Git" },
+    { img: Firebase, name: "Firebase" },
+    { img: Tailwind, name: "Tailwind CSS" },
+    { img: MUI, name: "Material UI" },
+    { img: Postman, name: "Postman" },
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Javascript} alt="javascript" />
-        <div className="tech-icons-text">JavaScript</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={ReactIcon} alt="react" />
-        <div className="tech-icons-text">React.js</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Redux} alt="redux" />
-        <div className="tech-icons-text">Redux</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Git} alt="git" />
-        <div className="tech-icons-text">Git</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Firebase} alt="firebase" />
-        <div className="tech-icons-text">Firebase</div>
-      </Col>
-
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Tailwind} alt="tailwind" />
-        <div className="tech-icons-text">Tailwind CSS</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={MUI} alt="mui" />
-        <div className="tech-icons-text">Material UI</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Postman} alt="postman" />
-        <div className="tech-icons-text">Postman</div>
-      </Col>
-
+      {techItems.map((tech, index) => (
+        <Col key={index} xs={4} md={2} className="tech-icons">
+          <img src={tech.img} alt={tech.name} />
+          <div className="tech-icons-text">{tech.name}</div>
+        </Col>
+      ))}
     </Row>
   );
 }
