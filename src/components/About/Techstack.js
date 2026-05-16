@@ -1,9 +1,7 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { SiTypescript, SiDocker } from "react-icons/si";
+import { Col, Row } from "react-bootstrap";``
 
 import Javascript from "../../Assets/TechIcons/Javascript.svg";
-import Node from "../../Assets/TechIcons/Node.svg";
 import ReactIcon from "../../Assets/TechIcons/React.svg";
 import Git from "../../Assets/TechIcons/Git.svg";
 import Firebase from "../../Assets/TechIcons/Firebase.svg";
@@ -19,12 +17,6 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <img src={Javascript} alt="javascript" />
         <div className="tech-icons-text">JavaScript</div>
-      </Col>
-
-      {/* ✅ FIXED: TypeScript */}
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTypescript size={40} />
-        <div className="tech-icons-text">TypeScript</div>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
@@ -47,11 +39,6 @@ function Techstack() {
         <div className="tech-icons-text">Firebase</div>
       </Col>
 
-      {/* ✅ FIXED: Docker */}
-      <Col xs={4} md={2} className="tech-icons">
-        <SiDocker size={40} />
-        <div className="tech-icons-text">Docker</div>
-      </Col>
 
       <Col xs={4} md={2} className="tech-icons">
         <img src={Tailwind} alt="tailwind" />
