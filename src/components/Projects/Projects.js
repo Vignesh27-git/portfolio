@@ -45,9 +45,9 @@ function Projects() {
 
                  <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={netflix-clone}
               isBlog={false}
-              title="Plant AI"
+              title="netflix-clone"
               description="This Netflix Clone is a responsive front-end web application built to recreate the Netflix-style user interface with a modern and interactive design. It includes features like a movie-style banner, responsive layout, navigation bar, hover effects, and categorized content sections for a real streaming-platform feel. The project is mainly developed using React.js for component-based UI building, along with JavaScript, HTML, and CSS/Bootstrap for styling and responsiveness. It is deployed online using Netlify, with code management typically handled through GitHub"
               ghLink="https://github.com/Vignesh27-git/Netflix-colne"
               demoLink="https://netflex-cloneeff6.netlify.app/"
