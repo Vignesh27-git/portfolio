@@ -14,7 +14,7 @@ function AboutCard() {
             I’m a{" "}
             <span className="purple">Frontend/Web Developer</span>
             
-            <br />I hold an Graduation B.Tech. (Ece) in{" "}
+            <br />I hold an Graduation B.Tech.(Ece) in{" "}
             <span className="purple">Electronic and Comunication</span> from{" "}
             <span className="purple">JNTU Hyderabad </span>.
             <br />
