@@ -8,6 +8,7 @@ import todolist from "../../Assets/Projects/todolist.png";
 import shoping from "../../Assets/Projects/shoping.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import interviw from "../../Assets/Projects/interviw.png";
+import netflix from  "../../Assets/Projects/netflix.png"
 
 function Projects() {
   return (
@@ -47,7 +48,7 @@ function Projects() {
             <ProjectCard
               imgPath={netflix}
               isBlog={false}
-              title="netflix-clone"
+              title="netflix"
               description="This Netflix Clone is a responsive front-end web application built to recreate the Netflix-style user interface with a modern and interactive design. It includes features like a movie-style banner, responsive layout, navigation bar, hover effects, and categorized content sections for a real streaming-platform feel. The project is mainly developed using React.js for component-based UI building, along with JavaScript, HTML, and CSS/Bootstrap for styling and responsiveness. It is deployed online using Netlify, with code management typically handled through GitHub"
               ghLink="https://github.com/Vignesh27-git/Netflix-colne"
               demoLink="https://netflex-cloneeff6.netlify.app/"
