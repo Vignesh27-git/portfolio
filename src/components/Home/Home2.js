@@ -13,7 +13,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Frontend/Web Developer with hands-on experience building responsive, user-friendly, and visually engaging web applications using HTML, CSS, JavaScript, and React.js. I enjoy combining logic and design—creating clean UI, optimizing performance, and improving user experience. I’ve worked on multiple projects, focusing on reusable components, modern ES6 features, and responsive layouts. I’m always learning and collaborating to deliver smooth, high-quality web experiences.
+              I’m a Frontend|Web Developer with hands-on experience building responsive, user-friendly, and visually engaging web applications using HTML, CSS, JavaScript, and React.js. I enjoy combining logic and design—creating clean UI, optimizing performance, and improving user experience. I’ve worked on multiple projects, focusing on reusable components, modern ES6 features, and responsive layouts. I’m always learning and collaborating to deliver smooth, high-quality web experiences.
               <br />
               <br />
               I’m proficient in
